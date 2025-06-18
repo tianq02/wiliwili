@@ -22,6 +22,7 @@ void LiveDataRequest::requestData(int roomid) {
                 qualityDescriptionMap[i.qn] = i.desc;
             }
 
+            // TODO: 下面的实现忽略了设置中的视频格式和编码选择
             // 选择第一个 protocol 的 第一个 format 的第一个 codec 作为播放源
             // protocol: http_stream / http_hls
             // format: flv / ts / fmp4
